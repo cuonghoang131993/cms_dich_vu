@@ -1,0 +1,42 @@
+{
+  "name": "dich-vu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "db:migrate": "cd ./database && sequelize-cli db:migrate",
+    "db:seed:all": "cd ./database && npx sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.7.0",
+    "@strapi/plugin-users-permissions": "5.7.0",
+    "@strapi/strapi": "5.7.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "sequelize": "^6.37.5",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "sequelize-auto-migrations": "^1.0.3",
+    "sequelize-cli": "^6.6.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "fe56bf50-5a60-48db-9c67-03afd427bab4"
+  }
+}
