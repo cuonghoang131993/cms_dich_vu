@@ -25,7 +25,6 @@ export default {
         ...options
       } as any);
     } catch (err) {
-      console.log(err)
       return err;
     }
   },
